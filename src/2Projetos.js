@@ -22,7 +22,6 @@ class Projetos extends React.Component {
       if (data) {
         const projetosArray = Object.values(data);
 
-        // Atualizar URLs das imagens usando o Firebase Storage
         for (const projeto of projetosArray) {
           if (projeto.imagemRef) {
             try {
