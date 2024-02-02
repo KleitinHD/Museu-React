@@ -3,14 +3,14 @@ import { getAnalytics } from "firebase/analytics";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "sua-api-key",
-  authDomain: "seu-auth-domain",
-  databaseURL: "sua-database-url",
-  projectId: "seu-project-id",
-  storageBucket: "seu-storage-bucket",
-  messagingSenderId: "seu-messaging-sender-id",
-  appId: "seu-app-id",
-  measurementId: "seu-measurement-id",
+  apiKey: "AIzaSyDET66rwcrhCfTvLc8pRvxBr9_hJrQ8K_g",
+  authDomain: "museudigital1.firebaseapp.com",
+  databaseURL: "https://museudigital1-default-rtdb.firebaseio.com",
+  projectId: "museudigital1",
+  storageBucket: "museudigital1.appspot.com",
+  messagingSenderId: "864111874677",
+  appId: "1:864111874677:web:5242eaa8ad25eadc2bde3c",
+  measurementId: "G-WDPWEB4W70",
 };
 
 const app = initializeApp(firebaseConfig);
