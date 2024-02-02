@@ -1,89 +1,54 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import { app } from "./firebase.js";
+import { getDatabase, ref, onValue } from "firebase/database";
 import "./App.css";
 
-function Projetos() {
-  return (
-    <section id="projetos">
-      <div class="carrousel-filmes">
-        <h3 class="subtitulo">PROJETOS</h3>
-        <div class="owl-carousel owl-theme">
-          <a href="projetos/estufa/estufa.html">
-            <div class="item">
-              <img
-                class="box-filme"
-                src="img/banners/estufa.png"
-                alt="estufa"
-              />
-            </div>
-          </a>
-          <a href="nikocloud.html">
-            <div class="item">
-              <img
-                class="box-filme"
-                src="img/banners/nikocloud.png"
-                alt="nikocloud"
-              />
-            </div>
-          </a>
-          <a href="tecminer.html">
-            <div class="item">
-              <img
-                class="box-filme"
-                src="img/banners/tecminer.png"
-                alt="tecminer"
-              />
-            </div>
-          </a>
-          <a href="celeste.html">
-            <div class="item">
-              <img
-                class="box-filme"
-                src="img/banners/celeste.png"
-                alt="celeste"
-              />
-            </div>
-          </a>
-          <a href="demeter.html">
-            <div class="item">
-              <img
-                class="box-filme"
-                src="img/banners/demeter.png"
-                alt="demeter"
-              />
-            </div>
-          </a>
-          <a href="respirador.html">
-            <div class="item">
-              <img
-                class="box-filme"
-                src="img/banners/respirador.png"
-                alt="respirador"
-              />
-            </div>
-          </a>
-          <a href="dryfilabox.html">
-            <div class="item">
-              <img
-                class="box-filme"
-                src="img/banners/dryfilabox.png"
-                alt="pendente"
-              />
-            </div>
-          </a>
-          <a href="">
-            <div class="item">
-              <img
-                class="box-filme"
-                src="img/banners/pendente.png"
-                alt="pendente"
-              />
-            </div>
-          </a>
+class Projetos extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      projetos: [],
+    };
+  }
+
+  componentDidMount() {
+    const database = getDatabase(app);
+    const projetosRef = ref(database, "projetos");
+
+    // Monitora alterações no banco de dados
+    onValue(projetosRef, (snapshot) => {
+      const data = snapshot.val();
+
+      // Atualiza o estado com os dados do banco de dados
+      if (data) {
+        const projetosArray = Object.values(data);
+        this.setState({ projetos: projetosArray });
+      }
+    });
+  }
+
+  render() {
+    return (
+      <section id="projetos">
+        <div className="carrousel-filmes">
+          <h3 className="subtitulo">PROJETOS</h3>
+          <div className="owl-carousel owl-theme">
+            {this.state.projetos.map((projeto, index) => (
+              <a key={index} href={projeto.link}>
+                <div className="item">
+                  <img
+                    className="box-filme"
+                    src={projeto.imagem}
+                    alt={projeto.nome}
+                  />
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-  );
+      </section>
+    );
+  }
 }
 
 export default Projetos;
