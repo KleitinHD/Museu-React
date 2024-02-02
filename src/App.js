@@ -1,8 +1,8 @@
 import "./App.css";
 
-import Header from "./Header";
-import Banner from "./Banner";
-import Projetos from "./Projetos";
+import Header from "./0Header";
+import Banner from "./1Banner";
+import Projetos from "./2Projetos";
 import Eventos from "./Eventos";
 import Equipe from "./Equipe";
 import Footer from "./Footer";
