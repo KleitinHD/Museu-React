@@ -4,9 +4,9 @@ import "./App.css";
 function Banner() {
   return (
     <main>
-      <div class="filme-principal">
-        <div class="container-titulo">
-          <h3 class="titulo">Museu Digital</h3>
+      <div className="filme-principal">
+        <div className="container-titulo">
+          <h3 className="titulo">Museu Digital</h3>
         </div>
       </div>
     </main>

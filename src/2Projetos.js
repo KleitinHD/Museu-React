@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { app } from "./firebase.js";
+import { app, storage } from "./firebase.js";
 import { getDatabase, ref, onValue } from "firebase/database";
+import { getDownloadURL } from "firebase/storage";
 import "./App.css";
 
 class Projetos extends React.Component {
@@ -15,13 +16,24 @@ class Projetos extends React.Component {
     const database = getDatabase(app);
     const projetosRef = ref(database, "projetos");
 
-    // Monitora alterações no banco de dados
-    onValue(projetosRef, (snapshot) => {
+    onValue(projetosRef, async (snapshot) => {
       const data = snapshot.val();
 
-      // Atualiza o estado com os dados do banco de dados
       if (data) {
         const projetosArray = Object.values(data);
+
+        // Atualizar URLs das imagens usando o Firebase Storage
+        for (const projeto of projetosArray) {
+          if (projeto.imagemRef) {
+            try {
+              const imageUrl = await getDownloadURL(storage, projeto.imagemRef);
+              projeto.imagem = imageUrl;
+            } catch (error) {
+              console.error("Erro ao obter URL da imagem:", error);
+            }
+          }
+        }
+
         this.setState({ projetos: projetosArray });
       }
     });
