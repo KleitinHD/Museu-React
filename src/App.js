@@ -14,7 +14,9 @@ function App() {
     <div className="App">
       <Header />
       <Banner />
+      <h3 className="subtitulo">PROJETOS</h3>
       <Projetos />
+      <h3 className="subtitulo">EVENTOS</h3>
       <Eventos />
       <Equipe />
       <Footer />

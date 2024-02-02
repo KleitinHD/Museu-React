@@ -6,7 +6,6 @@ function Eventos() {
   return (
     <section id="eventos">
       <div class="carrousel-filmes">
-        <h3 class="subtitulo">EVENTOS</h3>
         <div class="owl-carousel owl-theme conquistas-carousel">
           <div class="item conquista">
             <img class="box-filme2" src="img/conquistas/STEM.jpg" alt="STEM" />

@@ -1,0 +1,44 @@
+{
+  "projetos": {
+    "projeto1": {
+      "nome": "Estufa",
+      "link": "projetos/estufa/estufa.html",
+      "imagem": "img/banners/estufa.png"
+    },
+    "projeto2": {
+      "nome": "Nikocloud",
+      "link": "nikocloud.html",
+      "imagem": "img/banners/nikocloud.png"
+    },
+    "projeto3": {
+      "nome": "Tecminer",
+      "link": "tecminer.html",
+      "imagem": "img/banners/tecminer.png"
+    },
+    "projeto4": {
+      "nome": "Celeste",
+      "link": "celeste.html",
+      "imagem": "img/banners/celeste.png"
+    },
+    "projeto5": {
+      "nome": "Demeter",
+      "link": "demeter.html",
+      "imagem": "img/banners/demeter.png"
+    },
+    "projeto6": {
+      "nome": "Respirador",
+      "link": "respirador.html",
+      "imagem": "img/banners/respirador.png"
+    },
+    "projeto7": {
+      "nome": "Dryfila Box",
+      "link": "dryfilabox.html",
+      "imagem": "img/banners/dryfilabox.png"
+    },
+    "projeto8": {
+      "nome": "Pendente",
+      "link": "",
+      "imagem": "img/banners/pendente.png"
+    }
+  }
+}

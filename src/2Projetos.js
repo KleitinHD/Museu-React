@@ -31,7 +31,6 @@ class Projetos extends React.Component {
     return (
       <section id="projetos">
         <div className="carrousel-filmes">
-          <h3 className="subtitulo">PROJETOS</h3>
           <div className="owl-carousel owl-theme">
             {this.state.projetos.map((projeto, index) => (
               <a key={index} href={projeto.link}>
