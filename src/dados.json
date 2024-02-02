@@ -1,44 +1,44 @@
 {
   "projetos": {
     "projeto1": {
-      "nome": "Estufa",
+      "imagem": "https://firebasestorage.googleapis.com/v0/b/museudigital1.appspot.com/o/projetos%2Fbanners%2Festufa.webp?alt=media&token=694cb7a2-d941-415f-8177-caac8c56ed31",
       "link": "projetos/estufa/estufa.html",
-      "imagem": "img/banners/estufa.png"
+      "nome": "Estufa"
     },
     "projeto2": {
-      "nome": "Nikocloud",
+      "imagem": "https://firebasestorage.googleapis.com/v0/b/museudigital1.appspot.com/o/projetos%2Fbanners%2Fnikocloud.webp?alt=media&token=417e0d13-b5b3-4050-bf8b-688aecabe561",
       "link": "nikocloud.html",
-      "imagem": "img/banners/nikocloud.png"
+      "nome": "Nikocloud"
     },
     "projeto3": {
-      "nome": "Tecminer",
+      "imagem": "https://firebasestorage.googleapis.com/v0/b/museudigital1.appspot.com/o/projetos%2Fbanners%2Ftecminer.webp?alt=media&token=0c4abce4-55f8-4ec1-beb5-dae67a2216c8",
       "link": "tecminer.html",
-      "imagem": "img/banners/tecminer.png"
+      "nome": "Tecminer"
     },
     "projeto4": {
-      "nome": "Celeste",
+      "imagem": "https://firebasestorage.googleapis.com/v0/b/museudigital1.appspot.com/o/projetos%2Fbanners%2Fceleste.webp?alt=media&token=3c03d60c-e1c0-4195-b065-593709f20593",
       "link": "celeste.html",
-      "imagem": "img/banners/celeste.png"
+      "nome": "Celeste"
     },
     "projeto5": {
-      "nome": "Demeter",
+      "imagem": "https://firebasestorage.googleapis.com/v0/b/museudigital1.appspot.com/o/projetos%2Fbanners%2Fdemeter.webp?alt=media&token=fd17a0a8-8a79-4d9f-8f5f-c7f2efb0579d",
       "link": "demeter.html",
-      "imagem": "img/banners/demeter.png"
+      "nome": "Demeter"
     },
     "projeto6": {
-      "nome": "Respirador",
+      "imagem": "https://firebasestorage.googleapis.com/v0/b/museudigital1.appspot.com/o/projetos%2Fbanners%2Frespirador.webp?alt=media&token=e6f1b6ba-8656-48c1-8491-b1b29c1f67d3",
       "link": "respirador.html",
-      "imagem": "img/banners/respirador.png"
+      "nome": "Respirador"
     },
     "projeto7": {
-      "nome": "Dryfila Box",
+      "imagem": "https://firebasestorage.googleapis.com/v0/b/museudigital1.appspot.com/o/projetos%2Fbanners%2Fdryfilabox.webp?alt=media&token=654a00e8-78d3-4ec6-97e9-aa33f33202ea",
       "link": "dryfilabox.html",
-      "imagem": "img/banners/dryfilabox.png"
+      "nome": "Dryfila Box"
     },
     "projeto8": {
-      "nome": "Pendente",
+      "imagem": "https://firebasestorage.googleapis.com/v0/b/museudigital1.appspot.com/o/projetos%2Fbanners%2Fpendente.webp?alt=media&token=672f0823-fa2d-4baf-bc91-7fd9e46b22b8",
       "link": "",
-      "imagem": "img/banners/pendente.png"
+      "nome": "Pendente"
     }
   }
 }
